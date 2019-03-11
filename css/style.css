@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marmelad|Ultra');
+
+body{
+    font-family: 'Marmelad', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li{
+    display: inline-block;
+}
