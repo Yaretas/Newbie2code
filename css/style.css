@@ -4,12 +4,60 @@ body{
     font-family: 'Marmelad', sans-serif;
 }
 
+h2, h3 ,h4 ,h5, h6{
+    font-family: 'Fredericka the Great', cursive;
+}
+/* Start of the page............. */
+
+.background-big{
+    background-image: url(https://images.pexels.com/photos/414548/pexels-photo-414548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
 }
 
 nav li{
     display: inline-block;
+    margin-left: 20px;
+}
+
+#logo img{
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ShowCase................. */
+.showCase{
+    margin: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.showCase h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.my-img {
+    width: 300px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
 }
