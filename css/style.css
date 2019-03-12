@@ -2,6 +2,8 @@
 
 body{
     font-family: 'Marmelad', sans-serif;
+    background-color: #E1E7ED;
+    margin: 0;
 }
 
 h2, h3 ,h4 ,h5, h6{
@@ -14,6 +16,8 @@ h2, h3 ,h4 ,h5, h6{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 5px 0 0 solid black;
 }
 
 nav{
@@ -41,9 +45,9 @@ a {
 
 /* ShowCase................. */
 .showCase{
-    margin: 200px;
+    margin:200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 25px;
@@ -60,4 +64,27 @@ a {
     border: 5px solid black;
     border-radius: 50%;
     box-shadow: 2px 2px 2px gray;
+    margin-right: 13px;
 }
+
+/* about section............ */
+
+.about{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
