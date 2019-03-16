@@ -1,90 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marmelad|Ultra');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|IBM+Plex+Serif');
 
 body{
-    font-family: 'Marmelad', sans-serif;
-    background-color: #E1E7ED;
     margin: 0;
+    
 }
 
-h2, h3 ,h4 ,h5, h6{
-    font-family: 'Fredericka the Great', cursive;
-}
-/* Start of the page............. */
 
-.background-big{
-    background-image: url(https://images.pexels.com/photos/414548/pexels-photo-414548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    margin: 0 auto;
-    box-shadow: 0 5px 0 0 solid black;
-}
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
 
-nav li{
-    display: inline-block;
-    margin-left: 20px;
-}
 
-#logo img{
-    margin-top: 5px;
-    width: 35px;
-    height: 35px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* ShowCase................. */
-.showCase{
-    margin:200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-}
-.showCase h1{
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 45px;
-    font-weight: 900;
-}
-
-.my-img {
-    width: 300px;
-    height: auto;
-    border: 5px solid black;
-    border-radius: 50%;
-    box-shadow: 2px 2px 2px gray;
-    margin-right: 13px;
-}
-
-/* about section............ */
-
-.about{
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    box-shadow: 4px 4px 4px 4px black;
-}
-
-.about h2 {
-    text-align: center;
-    font-size: 30px;
-}
 
 
 
