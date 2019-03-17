@@ -59,6 +59,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .show-Case p{
@@ -94,31 +95,37 @@ body{
 }
 
 .about-content{
-    padding: 5%;
+    padding: 40px;
     display: flex;
     flex-direction: row; 
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
 }
 
 .about-me{
     flex-basis: 50%;
     /* background-color: red; */
-    padding-right: 40px;
+    margin-right: 40px;
     text-align: justify;
     box-shadow: 4px gray;
 }
 
 .about-me h2{
+    font-size: 25px;
     text-align: center;
+    text-shadow: 5px 5px 5px #485365;
 }
 
 .pro-content{
     /* background-color: red; */
     flex-basis: 50%;
-    padding-left: 40px;
+    margin-left: 40px;
     text-align: center;
     box-shadow: 4px gray;
+}
+
+.pro-content h3{
+    font-size: 25px;
 }
 
 .fancy-icons{
@@ -128,11 +135,17 @@ body{
 }
 
 .fab{
-    font-size: 120px;
+    font-size: 110px;
     color: #8DCC76;
-    text-shadow: 2px 2px 2px #282D31;
+    text-shadow:10px 10px 8px #485365;;
 }
 
+
+/* Stying My work section */
+
+.my-work{
+
+}
 
 
 
