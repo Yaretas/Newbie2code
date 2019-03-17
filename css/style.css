@@ -23,7 +23,7 @@ body{
 .nav-bar {
     margin: 0 auto;
     padding: 15px 0;
-    background: linear-gradient(70deg,transparent,rgb(247,247,249, 0.40));
+    background: linear-gradient(70deg,transparent 60%,rgb(247,247,249, 0.40), transparent);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,6 +77,7 @@ body{
     margin: 0;
     padding: 15px 0;
     font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
     text-shadow: 2px 4px 2px #282D31;
     border-bottom: 2px solid #8DCC76;
     border-top: 2px solid #8DCC76;
@@ -84,6 +85,56 @@ body{
 }
 
 /* Styling About me section */
+
+.about-container{
+    background-color: #F7F7F9;
+    height: 50vh;
+    color: #282D31;
+    
+}
+
+.about-content{
+    padding: 5%;
+    display: flex;
+    flex-direction: row; 
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.about-me{
+    flex-basis: 50%;
+    /* background-color: red; */
+    padding-right: 40px;
+    text-align: justify;
+    box-shadow: 4px gray;
+}
+
+.about-me h2{
+    text-align: center;
+}
+
+.pro-content{
+    /* background-color: red; */
+    flex-basis: 50%;
+    padding-left: 40px;
+    text-align: center;
+    box-shadow: 4px gray;
+}
+
+.fancy-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fab{
+    font-size: 120px;
+    color: #8DCC76;
+    text-shadow: 2px 2px 2px #282D31;
+}
+
+
+
 
 
 
