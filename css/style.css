@@ -1,9 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|IBM+Plex+Serif');
-
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Montserrat');
 body{
     margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #282D31;
+    color: #F7F7F9;
+    font-weight: 300;
+}
+
+/* style main container */
+
+.main-container {
+    padding: 0 40px;
+    background-image: url(../img/laptopMacDark.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Style navigation bar */
+
+.nav-bar {
+    margin: 0 auto;
+    padding: 15px 0;
+    background: linear-gradient(70deg,transparent,rgb(247,247,249, 0.40));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     
 }
+
+.nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li{
+    display: inline-flex;
+    padding: 0 20px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #282D31;
+}
+
+.fas {
+    font-size: 30px;
+}
+
+/* style ShowCase */
+
+.show-Case{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-Case p{
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 4px 2px #282D31;
+    
+}
+
+.myName{
+    color: #8DCC76;
+    font-weight: bold;
+}
+
+.show-Case h1{
+    margin: 0;
+    padding: 15px 0;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 2px 4px 2px #282D31;
+    border-bottom: 2px solid #8DCC76;
+    border-top: 2px solid #8DCC76;
+    text-transform: uppercase;
+}
+
+/* Styling About me section */
 
 
 
