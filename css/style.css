@@ -7,6 +7,9 @@ body{
     font-weight: 300;
 }
 
+h1, h2, h3, h4{
+    font-family: 'Fredericka the Great', cursive;
+}
 /* style main container */
 
 .main-container {
@@ -89,43 +92,52 @@ body{
 
 .about-container{
     background-color: #F7F7F9;
-    height: 50vh;
+    height: 80vh;
     color: #282D31;
+    display: flex;
     
 }
 
+.my-img{
+    height: 80vh;
+    width: 50vw;
+    box-sizing: border-box;
+}
+
+
 .about-content{
-    padding: 40px;
+    padding: 20px 40px;
+    margin: 20px 40px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     align-items: center;
     justify-content: space-around;
+    border: 0px solid #485365;
+    box-shadow: 2px 4px 2px 4px lightgrey;
+    
 }
 
 .about-me{
-    flex-basis: 50%;
-    /* background-color: red; */
-    margin-right: 40px;
+    flex-basis: 25%;
     text-align: justify;
-    box-shadow: 4px gray;
+    box-sizing: border-box;
 }
 
 .about-me h2{
     font-size: 25px;
     text-align: center;
-    text-shadow: 5px 5px 5px #485365;
+    font-weight: 500;
 }
 
 .pro-content{
-    /* background-color: red; */
-    flex-basis: 50%;
-    margin-left: 40px;
+    flex-basis: 25%;
     text-align: center;
-    box-shadow: 4px gray;
+    box-sizing: border-box;
 }
 
 .pro-content h3{
     font-size: 25px;
+    font-weight: 500;
 }
 
 .fancy-icons{
@@ -135,20 +147,89 @@ body{
 }
 
 .fab{
-    font-size: 110px;
+    padding-right: 5px;
+    font-size: 60px;
     color: #8DCC76;
-    text-shadow:10px 10px 8px #485365;;
+    text-shadow: 5px 8px 5px #485365;
 }
 
+@media (min-width: 600px) and (max-width: 1300px){
+
+    .about-content{
+        /* padding: 5px 30px; */
+        
+    }
+    .about-me{
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    .about-me h2{
+        margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .pro-content{
+        box-sizing: border-box;
+    }
+    .pro-content h3{
+        margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    .fab {
+        font-size: 40px;
+        text-shadow: 2px 5px 2px #485365;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .about-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .my-img{
+        margin-top: 30px;
+        max-height: 300px; 
+        max-width: 300px;
+        border: 2px solid #485365;
+        border-radius: 100%;
+    }
+}
 
 /* Stying My work section */
 
 .my-work{
-
+    height: 60vh;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
+.box-work{
+    margin: 20px;
+    background: red;
+    width: 500px;
+    height: 300px;
+}
 
+/* adding media queries to my work */
+@media (max-width: 599px){
+
+}
 
 
 
