@@ -92,7 +92,7 @@ h1, h2, h3, h4{
 
 .about-container{
     background-color: #F7F7F9;
-    height: 80vh;
+    /* height: 80vh; */
     color: #282D31;
     display: flex;
     
@@ -143,7 +143,7 @@ h1, h2, h3, h4{
 .fancy-icons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-items: center;
 }
 
 .fab{
@@ -188,7 +188,7 @@ h1, h2, h3, h4{
 
 @media screen and (max-width: 800px){
     .about-container{
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
         flex-direction: column;
         align-items: center;   
@@ -206,7 +206,7 @@ h1, h2, h3, h4{
 /* Stying My work section */
 
 .my-work{
-    height: 60vh;
+    /* height: 60vh; */
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
