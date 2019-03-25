@@ -16,6 +16,9 @@ h1, h2, h3, h4{
     padding: 0 40px;
     background-image: url(../img/laptopMacDark.jpeg);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
@@ -124,36 +127,40 @@ h1, h2, h3, h4{
 }
 
 .about-me h2{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: 500;
 }
 
+.about-me p{
+    color: #485365;
+}
+
 .pro-content{
-    flex-basis: 25%;
+    flex-basis: 30%;
     text-align: center;
     box-sizing: border-box;
 }
 
 .pro-content h3{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
 }
 
 .fancy-icons{
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
+    justify-content: space-around;
 }
 
 .fab{
-    padding-right: 5px;
+    padding: 5px;
     font-size: 60px;
     color: #8DCC76;
     text-shadow: 5px 8px 5px #485365;
 }
 
-@media (min-width: 600px) and (max-width: 1300px){
+@media (min-width: 300px) and (max-width: 1250px){
 
     .about-content{
         /* padding: 5px 30px; */
@@ -213,22 +220,80 @@ h1, h2, h3, h4{
     box-sizing: border-box;
 }
 
+.work-tittle{
+    text-align: center;
+    font-size: 45px;
+}
+
 .box-container{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .box-work{
     margin: 20px;
-    background: red;
-    width: 500px;
-    height: 300px;
+    background: white;
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
 }
 
-/* adding media queries to my work */
-@media (max-width: 599px){
 
+
+
+/* adding media queries to my work */
+@media (max-width: 400px){
+    .about-container{
+        padding: 20px;  
+        box-sizing: border-box;
+    }
+
+    .about-content{
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+/* styling Contact section and footer */
+
+.contact-container{
+    padding: 10vh 0;
+    background: url(../img/fistbump.jpeg) no-repeat;
+    background-color: #485365;
+    background-size: 100rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.contact-position{
+    flex-basis: 50%;
+    margin-right: 40px;
+    color: #F7F7F9;
+}
+
+.contact-container h4{
+    margin: 0 auto;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+.text{
+    color: #8DCC76;
+}
+
+.btn-contact{
+    
 }
 
 
