@@ -293,9 +293,31 @@ h1, h2, h3, h4{
 }
 
 .btn-contact{
-    
+    background-color: #485365;
+    border: 2px solid #282D31;
+    border-radius: 5%;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #F7F7F9;
+    font-weight: 700;
 }
 
+.btn-contact a{
+    text-decoration: none;
+    color: #F7F7F9;
+}
+
+.btn:hover{
+    background-color: #8DCC76;
+    color: #282D31;
+    text-shadow: 2px 2px 2px #485365;
+}
 
 
 
