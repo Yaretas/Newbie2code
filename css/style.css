@@ -360,6 +360,10 @@ footer{
     text-align: center;
 }
 
+.right .fas{
+    font-size: 12px;
+}
+
 
 /* adding media queries to my work */
 @media (max-width: 400px){
