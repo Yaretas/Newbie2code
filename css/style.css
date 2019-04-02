@@ -7,6 +7,10 @@ body{
     font-weight: 300;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4{
     font-family: 'Fredericka the Great', cursive;
 }
@@ -102,9 +106,10 @@ h1, h2, h3, h4{
 }
 
 .my-img{
-    height: 80vh;
-    width: 50vw;
-    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 4px 4px lightgrey;
 }
 
 
@@ -114,8 +119,9 @@ h1, h2, h3, h4{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 0px solid #485365;
+    border-radius: 10px;
     box-shadow: 2px 4px 2px 4px lightgrey;
     
 }
@@ -211,14 +217,13 @@ h1, h2, h3, h4{
     }
 }
 
-/* Stying My work section */
+/* Stying My work section.................... */
 
 .my-work{
-    /* height: 60vh; */
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .work-tittle{
@@ -235,16 +240,23 @@ h1, h2, h3, h4{
 
 .box-container{
     margin: 20px;
-    background: white;
+    background: #F7F7F9;
     color: #485365;
     width: 400px;
     height: 400px;
+    border-radius: 30px;
     box-sizing: border-box;
 }
-/* .box-work img{
-    width: 100%;
-    height: 100%;
-} */
+div.box-work img{
+    border-radius: 30px 30px 0 0;
+}
+
+div.desc{
+    padding: 15px;
+    text-align: center;
+    background-color: #F7F7F9; 
+    border-radius: 30px;
+}
 .clearfix:after {
     content: "";
     display: table;
@@ -252,20 +264,8 @@ h1, h2, h3, h4{
     overflow: auto;
 }
 
-/* adding media queries to my work */
-@media (max-width: 400px){
-    .about-container{
-        padding: 20px;  
-        box-sizing: border-box;
-    }
 
-    .about-content{
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-}
-
-/* styling Contact section and footer */
+/* styling Contact section and footer.......... */
 
 .contact-container{
     padding: 10vh 0;
@@ -299,17 +299,18 @@ h1, h2, h3, h4{
 .btn-contact{
     background-color: #485365;
     border: 2px solid #282D31;
-    border-radius: 5%;
+    border-radius: 10px 10px;
     padding: 1em 2em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Fredericka the Great', cursive;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
     color: #F7F7F9;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .btn-contact a{
@@ -324,4 +325,78 @@ h1, h2, h3, h4{
 }
 
 
+/* Styling footer............... */
+footer{
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.follow{
+    font-family: 'Fredericka the Great', cursive;
+    margin: 16px 0;
+    padding-top: 7px;
+}
+.social ul{
+    padding-left: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.right{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* adding media queries to my work */
+@media (max-width: 400px){
+    .about-container{
+        padding: 20px;  
+        box-sizing: border-box;
+    }
+
+    .about-content{
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .work-tittle{
+        font-size: 30px;
+    }
+
+    .box-container{
+        width: 350px;
+        height: 300px;
+        box-sizing: content-box;
+    }
+
+    .my-work{
+        padding: 20px;
+    }
+
+    div.box-work img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-position{
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+    }
+}
